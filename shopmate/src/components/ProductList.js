@@ -3,7 +3,7 @@ import {useFetch} from "../hooks/useFetch"
 
 function ProductList() {
     const [url, setUrl] = useState("http://localhost:4000/product")
-    const {data:products} = useFetch(url);
+    const {data:products, loading} = useFetch(url);
 
     // const fetchProducts = useCallback(async () => {
     //     const response = await fetch(url);
@@ -17,6 +17,7 @@ function ProductList() {
     <section>
         <button onClick={() => setUrl("http://localhost:4000/product")}>All</button>
         <button onClick={() => setUrl('http://localhost:4000/product?in_stock=true')}> Stock Only</button>
+        {loading && <p>Loading products......</p>}
         {products && products.map((product) => {
             return (<div className="card" key={product.id}>
             <p>{product.id}</p>
