@@ -1,7 +1,7 @@
 .App{
     min-height: 100vh;
   }
-  
+
   .container{
     max-width: 1200px;
     margin: auto;
@@ -98,16 +98,18 @@
     background-color: #FFFFFF;
     margin: 20px auto;
     box-shadow: var(--box-shadow);
+    width:60%
   }
   
-  .showTask p.head{
+  .showTask .head{
     padding: 10px 0px 20px 0px;
     border-bottom: 1px solid #dfdfdf;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   
-  .showTask p.head span:first-child{
+  .showTask .head span:first-child{
     flex-grow: 1;
   }
   
