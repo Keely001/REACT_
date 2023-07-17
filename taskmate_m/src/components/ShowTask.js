@@ -1,4 +1,13 @@
-export const ShowTask = ({tasklist, setTasklist}) => {
+export const ShowTask = ({tasklist, setTasklist,task,setTask}) => {
+
+    const handleEdit = (id) => {
+        const  selectedTask = tasklist.find((toRender) => toRender.id ===id)
+        setTask(selectedTask);
+    }
+    const handleDelete = (id) => {
+        // const updatedTasklist = tasklist.filter(toRender => toRender.id !== id);
+        // console.log(updatedTasklist);
+    }
 
   return (
     <section className="showTask">
@@ -10,14 +19,14 @@ export const ShowTask = ({tasklist, setTasklist}) => {
             <button className="clearAll" onClick={() => (setTasklist([]))}>Clear All</button>
         </div>
         <ul>
-            {tasklist.map((task) => {
-            return <li key={task.id}>
+            {tasklist.map((toRender) => {
+            return <li key={toRender.id}>
                 <p>
-                    <span>{task.name}</span>
-                    <span>{task.time}</span>
+                    <span>{toRender.name}</span>
+                    <span>{toRender.time}</span>
                 </p>
-                <i className="bi bi-pencil-square"></i>
-                <i className="bi bi-trash"></i>
+                <i onClick={handleEdit(toRender.id)} className="bi bi-pencil-square"></i>
+                <i onClick={handleDelete(toRender.id)} className="bi bi-trash"></i>
             </li>
             })}
         </ul>
