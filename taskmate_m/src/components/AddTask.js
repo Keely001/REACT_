@@ -13,6 +13,7 @@ export const AddTask = ({tasklist, setTasklist,task,setTask}) =>  {
         toRender)
       });
       setTasklist(updateTasklist)
+      setTask({})
     }else {
       const date = new Date();
       const newTask = {id: date.getTime(),
@@ -20,13 +21,13 @@ export const AddTask = ({tasklist, setTasklist,task,setTask}) =>  {
         time: `${date.toLocaleTimeString()} ${date.toLocaleDateString()}`
       }
       setTasklist([...tasklist,newTask])
-      e.target.task.value = "";
+      setTask({});
     }
   }
   return (
     <section className="addTask">
         <form onSubmit={handleSubmit}>
-            <input type="text" name="task" autoComplete="off" value = {task.name} placeholder="add task" onChange={e => setTask({...task,name:e.target.value})}/>
+            <input type="text" name="task" autoComplete="off" value = {task.name || ""} placeholder="add task" onChange={e => setTask({...task,name:e.target.value})}/>
             <button type= "submit">Add</button>
         </form>
     </section>
