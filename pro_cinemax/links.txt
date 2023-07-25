@@ -1,4 +1,4 @@
-a84e51450c4e69ff75c76bd929a4613f
+
 
 individual:
 https://api.themoviedb.org/3/movie/{movie_id}?api_key=a84e51450c4e69ff75c76bd929a4613f
@@ -13,7 +13,7 @@ Top Rated:
 https://api.themoviedb.org/3/movie/top_rated?api_key=a84e51450c4e69ff75c76bd929a4613f
 
 Upcoming:
-https://api.themoviedb.org/3/movie/Upcoming?api_key=a84e51450c4e69ff75c76bd929a4613f
+https://api.themoviedb.org/3/movie/upcoming?api_key=a84e51450c4e69ff75c76bd929a4613f
 
 Search:
 https://api.themoviedb.org/3/movie/search?api_key=a84e51450c4e69ff75c76bd929a4613f&query={movie_name}

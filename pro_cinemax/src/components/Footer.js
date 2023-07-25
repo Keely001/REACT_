@@ -9,16 +9,16 @@ export const Footer = () => {
             </span>
             <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
                 <li>
-                    <a href="#" target="_blank" className="mr-4 hover:underline md:mr-6 ">Instagram</a>
+                    <a href="/" target="_blank" className="mr-4 hover:underline md:mr-6 ">Instagram</a>
                 </li>
                 <li>
-                    <a href="#" target="_blank" className="mr-4 hover:underline md:mr-6">Twitter</a>
+                    <a href="/" target="_blank" className="mr-4 hover:underline md:mr-6">Twitter</a>
                 </li>
                 <li>
-                    <a href="#" target="_blank" className="mr-4 hover:underline md:mr-6">Github</a>
+                    <a href="/" target="_blank" className="mr-4 hover:underline md:mr-6">Github</a>
                 </li>
                 <li>
-                    <a href="#" target="_blank" className="hover:underline">LinkedIn</a>
+                    <a href="/" target="_blank" className="hover:underline">LinkedIn</a>
                 </li>
             </ul>
             </div>
