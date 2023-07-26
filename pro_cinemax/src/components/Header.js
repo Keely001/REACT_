@@ -17,10 +17,10 @@ export const Header = () => {
         }
     }, [darkMode]);
 
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      const queryTerm = e.target.search.value;
-      e.target.reset();
+    const handleSubmit = (event) => {
+      event.preventDefault();
+      const queryTerm = event.target.search.value;
+      event.target.reset();
 
       return navigate(`/search?q=${queryTerm}`);
     }
@@ -83,13 +83,13 @@ export const Header = () => {
           <NavLink to="/" className= {({isActive}) => isActive? activeClass: inActiveClass} end>Home</NavLink>
         </li>
         <li>
-          <NavLink to="/movies/popular" className={({isActive}) => isActive? activeClass: inActiveClass}>Popular</NavLink>
+          <NavLink to="/movie/popular" className={({isActive}) => isActive? activeClass: inActiveClass}>Popular</NavLink>
         </li>
         <li>
-          <NavLink to="/movies/top" className={({isActive}) => isActive? activeClass: inActiveClass}>Top rated</NavLink>
+          <NavLink to="/movie/top" className={({isActive}) => isActive? activeClass: inActiveClass}>Top rated</NavLink>
         </li>
         <li>
-          <NavLink to="/movies/upcoming" className={({isActive}) => isActive? activeClass: inActiveClass}>upComing</NavLink>
+          <NavLink to="/movie/upcoming" className={({isActive}) => isActive? activeClass: inActiveClass}>upComing</NavLink>
         </li>
       </ul>
     </div>
