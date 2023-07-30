@@ -1,17 +1,20 @@
 import {Routes, Route, Navigate} from "react-router-dom"
-import './App.css';
+import { Header, Footer } from './components';
+import { 
+  Home,
+  Contact,
+  ProductDetail,
+  ProductList,
+  Admin,
+  PageNotFound,
+  ContactEu,
+  ContactIn,
+  ContactUs
 
-import { Header } from './components/Header';
-import { Home } from './pages/Home';
-import { Footer } from './components/Footer';
-import { Contact } from './pages/Contact/Contact';
-import { ProductDetail } from './pages/ProductDetail';
-import { ProductList } from './pages/ProductList';
-import { Admin } from "./pages/Admin";
-import { PageNotFound } from "./pages/PageNotFound";
-import { ContactEu } from "./pages/Contact/ContactEu";
-import { ContactIn } from "./pages/Contact/ContactIn";
-import { ContactUs } from "./pages/Contact/ContactUs";
+ } from './pages';
+
+ import './App.css';
+
 function App() {
   const user = true;
   

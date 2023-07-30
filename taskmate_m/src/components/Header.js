@@ -18,7 +18,7 @@ export const Header = () => {
         <div className="logo">
             <img src={Logo} alt="taskmate logo" />
             <span>Taskmate</span>
-        </div>
+        </div>      
         <div className= "themeSelector">
             <span onClick={() => setTheme("light")} className={theme ==="light"? "light activeTheme": "light"}></span>
             <span onClick={() => setTheme("medium")} className={theme ==="medium"? "medium activeTheme": "medium"}></span>
