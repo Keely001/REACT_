@@ -13,6 +13,7 @@ export const AllRoutes = () => {
             <Route path="search" element={<Search apiPath= "search/movie"/>}/>
             <Route path="*" element={<PageNotFound title="path not found"/>}/>
         </Routes>
+        
     </div>
   )
 }
